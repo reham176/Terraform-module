@@ -2,7 +2,15 @@ provider "aws" {
     region = "us-east-1"
     
 }
+terraform{
+    backend "s3" {
+        bucket = "my-app-004014397957"
+        key="myapp-state/terraform.tfstate"
+        region="us-east-1"
 
+    }
+    
+}
 resource "aws_vpc" "my-vpc"{  #dah name 5as bel terraform 3alashan 2ader 23mlo referecing wana b3mel subnets
     #cidr_block = var.cidr_blocks[0].cidr_block han5li el modo3 2shel
     cidr_block = var.vpc_cidr_block
