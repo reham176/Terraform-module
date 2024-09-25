@@ -11,10 +11,10 @@ env= "Dev"
 vpc_cidr_block= "10.0.0.0/16"
 subnet_cidr_block= "10.0.0.0/24"
 avil_zone= "us-east-1a"
-my_ip= "156.160.217.13/32"
+my_ip= "102.43.64.238/32"
 instance_type ="t2.micro"
 public_key_location = "~/.ssh/id_rsa.pub" #lock
-private_key_location = "~/.ssh/id_rsa" #key
+#private_key_location = "~/.ssh/id_rsa" #key  lma kona bnshr7 el proviners
 
 
 
